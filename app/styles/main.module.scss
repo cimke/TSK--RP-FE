@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+.main {
+    background-color: #F8CC5D;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .formSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 30px;
+    height: 797px;
+    padding: 64px;
+    border: 1px solid #1F343E;
+    border-radius: 16px;
+  
+    @media (min-width: 768px) {
+      width: 45%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .title {
+    text-align: left;
+    font: normal normal normal 48px/72px Caveat Brush;
+    letter-spacing: 0px;
+    color: #1F343E;
+    text-transform: uppercase;
+  
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  
+  .description {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 32px;
+  
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: fit-content;
+
+    .statusIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .confirmationText {
+      font-weight: bold;
+      font-size: 16px;
+      color: #1F343E;
+      padding-left: 16px;
+    }
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #1F343E;
+    border-radius: 8px;
+  }
+  
+  .button {
+    padding: 15px;
+    background-color: #1ca8e3;
+    color: white;
+    border: 1px solid #1F343E;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken(#1ca8e3, 10%);
+    }
+  }
+  
+  .terms {
+    padding-top: 70px;
+    font: normal normal normal 16px/32px Noto Sans;
+    letter-spacing: 0px;
+    color: #6D7A80;
+  
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  
+  .stepsSection {
+    width: 100%;
+    max-width: 448px;
+    padding-top: (128 - 64)px;
+    margin-left: 128px;
+
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+  }
+  
+  .step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+//TODO: SUTVARKYT
+  .reversed {
+    flex-direction: row-reverse;
+
+    .stepIcon {
+        margin-left: 48px;
+    }
+  }
+  
+  .stepIcon {
+    width: 128px;
+    height: 140px;
+    flex-shrink: 0;
+    margin-top: 15px;
+  }
+  
+  .stepContent {
+    flex-grow: 1;
+    width: 256px;
+  }
+  
+  .stepTitle {
+    text-align: left;
+    font: normal normal bold 20px/32px Noto Sans;
+    letter-spacing: 1.6px;
+    color: #4EB3E3;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+  
+  .stepSubtitle {
+    font: normal normal normal 32px/48px Caveat Brush;
+    letter-spacing: 0px;
+    color: #1F343E;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  
+  .stepDescription {
+    font: normal normal normal 20px/32px Noto Sans;
+    letter-spacing: 0px;
+    color: #1F343E;
+  }
+  

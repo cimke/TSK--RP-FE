@@ -1,0 +1,116 @@
+.footer {
+  background-color: #f8f4f9;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.companyInfo {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    flex-basis: 45%;
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #666;
+}
+
+.links {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-basis: 45%;
+  }
+}
+
+.quickLinks, .contact {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+
+  @media (min-width: 480px) {
+    flex-basis: 45%;
+    margin-bottom: 0;
+  }
+}
+
+.quickLinks h3, .contact h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quickLinks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quickLinks li {
+  margin-bottom: 10px;
+}
+
+.quickLinks a, .contact a {
+  color: #1F343E;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #1ca8e3;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #1ca8e3;
+  border: 1px solid #1F343E;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(#1ca8e3, 10%);
+  }
+}
+
+.socialIcons img {
+  width: 16px;
+  height: 16px;
+}

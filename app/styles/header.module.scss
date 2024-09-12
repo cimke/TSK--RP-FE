@@ -1,0 +1,69 @@
+.header {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    .logoImage {
+      height: 30px;
+      width: auto;
+    }
+  }
+  
+  .desktopNav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLink {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    
+    &:hover {
+      color: #F8CC5D;
+    }
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobileNavLink {
+    color: #434A54;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
