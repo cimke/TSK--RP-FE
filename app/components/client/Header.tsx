@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ isMobile }) => {
         {/* Desktop Navigation */}
         {!isMobile && (
           <nav className={styles.desktopNav}>
-            <Link href='/chrome-extension' className={`${styles.navLink} glow`}>
+            <Link href='/chrome-extension' className={`${styles.navLink} ${styles.glow}`}>
               Chrome Extension
             </Link>
             <Link href='/price-comparison' className={styles.navLink}>

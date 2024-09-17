@@ -1,6 +1,8 @@
+@import "./variables.scss";
+
 .copyInput {
   display: flex;
-  border: 1px solid #1F343E;
+  border: 1px solid $primary-dark;
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
@@ -19,7 +21,7 @@
   .copyButton {
     color: #ffffff;
     background: #4EB3E3 0% 0% no-repeat padding-box;
-    border-left: 1px solid #1F343E;
+    border-left: 1px solid $primary-dark;
     border-radius: 0px 8px 8px 0px;
     font: normal normal bold 20px/24px Noto Sans;
     padding: 10px 20px;

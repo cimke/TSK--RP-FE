@@ -31,6 +31,10 @@
         font-size: $font-small;
         font-weight: 500;
 
+        .glow {
+          color: #4EB3E3 !important;
+        }
+
         &:hover {
           color: $background-yellow;
         }
