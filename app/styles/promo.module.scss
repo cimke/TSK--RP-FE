@@ -1,79 +1,82 @@
+@import "./variables.scss";
+
 .appStoreLinks {
-    background: #45565E 0% 0% no-repeat padding-box;
-    border: 1px solid #1F343E;
-    padding: 20px 0;
+  background: #45565E;
+  border: 1px solid #1F343E;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  height: 144px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.storeLink {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1F343E;
+  border-radius: 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $gray;
   }
-  
-  .container {
-    max-width: 1200px;
-    height: 144px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .storeLink {
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid #1F343E;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: #333333;
-    }
-  }
-  
+
   .storeIcon {
     width: 56px;
     height: 52px;
     margin-right: 10px;
   }
-  
+
   .storeLinkText {
     display: flex;
     flex-direction: column;
-    
+
+    .availableText {
+      font-size: 10px;
+    }
+
+    .storeName {
+      font-size: $font-small;
+      font-weight: bold;
+    }
   }
-  
-  .availableText {
-    font-size: 10px;
-  }
-  
-  .storeName {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .chromeReviews {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-  }
-  
+}
+
+.chromeReviews {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+
   .stars {
     font-size: 20px;
     margin-right: 10px;
   }
-  
+
   .reviewText {
-    font-size: 14px;
+    font-size: $font-small;
   }
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .storeLink, .chromeReviews {
-      width: 100%;
-      justify-content: center;
-    }
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    flex-direction: row;
+    padding: 0 31px;
   }
+
+  .storeLink,
+  .chromeReviews {
+    width: 100%;
+    justify-content: center;
+  }
+}
